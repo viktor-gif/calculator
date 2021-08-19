@@ -26,50 +26,50 @@ function result() {
 
 
 
-$('.calc__key').mousedown(function() {
-    let btnStyleDown = {
-        'background': 'rgb(203, 180, 155)',
-        'box-shadow': '1px 1px 2px black',
-        'width': '48px',
-        'height': '33px',
-        'border': '1px solid grey',
-        'font-size': '18px',
-        'margin': '1px'
-    }
-    $(this).css(btnStyleDown);
+// $('.calc__key').mousedown(function() {
+//     let btnStyleDown = {
+//         'background': 'rgb(203, 180, 155)',
+//         'box-shadow': '1px 1px 2px black',
+//         'width': '48px',
+//         'height': '33px',
+//         'border': '1px solid grey',
+//         'font-size': '18px',
+//         'margin': '1px'
+//     }
+//     $(this).css(btnStyleDown);
     
-});
-$('.calc__key').mouseup(function() {
-    let btnStyleUp = {
-        'width': '50px',
-        'height': '35px',
-        'background-color': 'rgb(231, 213, 186)',
-        'border': '1px solid rgb(5, 7, 29)',
-        'border-radius': '5px',
-        'box-shadow': '2px 2px 4px black',
-        'font-size': '20px',
-        'font-weight': '400',
-        'color': 'rgb(11, 12, 14)',
-        'margin': '0'
-    }
-    $(this).css(btnStyleUp);
+// });
+// $('.calc__key').mouseup(function() {
+//     let btnStyleUp = {
+//         'width': '50px',
+//         'height': '35px',
+//         'background-color': 'rgb(231, 213, 186)',
+//         'border': '1px solid rgb(5, 7, 29)',
+//         'border-radius': '5px',
+//         'box-shadow': '2px 2px 4px black',
+//         'font-size': '20px',
+//         'font-weight': '400',
+//         'color': 'rgb(11, 12, 14)',
+//         'margin': '0'
+//     }
+//     $(this).css(btnStyleUp);
     
-});
-$('.calc__key').mouseenter(function() {
+// });
+// $('.calc__key').mouseenter(function() {
     
-    let btnStyleEnter = {
+//     let btnStyleEnter = {
         
-        'background': 'rgb(163, 160, 155)'
-    }
-    $(this).css(btnStyleEnter);
+//         'background': 'rgb(163, 160, 155)'
+//     }
+//     $(this).css(btnStyleEnter);
     
-});
-$('.calc__key').mouseleave(function() {
-    let btnStyleLeave = {
-        'background': 'rgb(231, 213, 186)'
-    }
-    $(this).css(btnStyleLeave);
-});
+// });
+// $('.calc__key').mouseleave(function() {
+//     let btnStyleLeave = {
+//         'background': 'rgb(231, 213, 186)'
+//     }
+//     $(this).css(btnStyleLeave);
+// });
 
 
 
@@ -77,47 +77,47 @@ $('.calc__key').mouseleave(function() {
 
 
 
-$('#calc__clear').mousedown(function() {
-    let cleanStyleDown = {
-        'background': 'rgb(163, 39, 39)',
-        'box-shadow': '1px 1px 2px black',
-        'width': '48px',
-        'height': '33px',
-        'border': '1px solid grey',
-        'font-size': '18px',
-        'margin': '1px'
-    }
-    $(this).css(cleanStyleDown);
+// $('#calc__clear').mousedown(function() {
+//     let cleanStyleDown = {
+//         'background': 'rgb(163, 39, 39)',
+//         'box-shadow': '1px 1px 2px black',
+//         'width': '48px',
+//         'height': '33px',
+//         'border': '1px solid grey',
+//         'font-size': '18px',
+//         'margin': '1px'
+//     }
+//     $(this).css(cleanStyleDown);
     
-});
-$('#calc__clear').mouseup(function() {
-    let cleanStyleUp = {
-        'width': '50px',
-        'height': '35px',
-        'background-color': 'red',
-        'border': '1px solid rgb(5, 7, 29)',
-        'border-radius': '5px',
-        'box-shadow': '2px 2px 4px black',
-        'font-size': '20px',
-        'font-weight': '400',
-        'color': 'white',
-        'margin': '0'
-    }
-    $(this).css(cleanStyleUp);
+// });
+// $('#calc__clear').mouseup(function() {
+//     let cleanStyleUp = {
+//         'width': '50px',
+//         'height': '35px',
+//         'background-color': 'red',
+//         'border': '1px solid rgb(5, 7, 29)',
+//         'border-radius': '5px',
+//         'box-shadow': '2px 2px 4px black',
+//         'font-size': '20px',
+//         'font-weight': '400',
+//         'color': 'white',
+//         'margin': '0'
+//     }
+//     $(this).css(cleanStyleUp);
     
-});
-$('#calc__clear').mouseenter(function() {
+// });
+// $('#calc__clear').mouseenter(function() {
     
-    let cleanStyleEnter = {
+//     let cleanStyleEnter = {
         
-        'background': 'rgb(163, 39, 39)'
-    }
-    $(this).css(cleanStyleEnter);
+//         'background': 'rgb(163, 39, 39)'
+//     }
+//     $(this).css(cleanStyleEnter);
     
-});
-$('#calc__clear').mouseleave(function() {
-    let cleanStyleLeave = {
-        'background': 'red'
-    }
-    $(this).css(cleanStyleLeave);
-});
+// });
+// $('#calc__clear').mouseleave(function() {
+//     let cleanStyleLeave = {
+//         'background': 'red'
+//     }
+//     $(this).css(cleanStyleLeave);
+// });
