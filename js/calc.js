@@ -16,11 +16,80 @@ function back() {
     textView.value = exp.substring(0, exp.length-1);
 }
 
+// function result() {
+//     let exp = textView.value;
+//     if (exp) {
+//         textView.value = eval(exp);
+//     }
+// }
+
 function result() {
     let exp = textView.value;
-    if (exp) {
-        textView.value = eval(exp);
+    function result(sep, initVal, op) {
+        let arr = exp.split(sep);
+            console.log(arr);
+            let sum = initVal;
+            arr.forEach(num => {
+                sum = `${sum}${op}${+num}`;
+                textView.value = sum;
+                console.log(sum);
+            });
     }
+    if (exp) {
+        if (exp.includes('+')) {
+            // result('+', 0, '+');
+            let arr = exp.split('+');
+            console.log(arr);
+            let sum = 0;
+            arr.forEach(num => {
+                sum += +num
+                textView.value = sum;
+            });
+        }
+        if (exp.includes('-')) {
+            // result('-', +arr[0] * 2, '-');
+            let arr = exp.split('-');
+            console.log(arr);
+            let diff = +arr[0] * 2;
+            arr.forEach((num) => {
+                diff -= +num
+                textView.value = diff;
+            });
+        }
+        if (exp.includes('*') && !exp.includes('**')) {
+            let arr = exp.split('*');
+            console.log(arr);
+            let mul = 1;
+            arr.forEach((num) => {
+                mul *= +num
+                textView.value = mul;
+            });
+        }
+        if (exp.includes('/')) {
+            let arr = exp.split('/');
+            console.log(arr);
+            let div = +arr[0] * +arr[0];
+            arr.forEach((num) => {
+                div /= +num
+                textView.value = div;
+            });
+        }
+        if (exp.includes('**')) {
+            let arr = exp.split('**');
+            console.log(arr);
+            let div = +arr[0];
+            arr.forEach((num, index) => {
+                if (index !== 0) {
+                    div **= +num
+                    textView.value = div;
+                }
+            });
+        }
+    }
+}
+function root() {
+    let exp = textView.value;
+    textView.value = exp ** (1/2);
 }
 
 
